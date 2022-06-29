@@ -9,3 +9,6 @@ function obterQuizzes() {
 }
 
 
+function renderizarQuizzes (){
+    
+}
