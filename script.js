@@ -7,3 +7,5 @@ function obterQuizzes() {
     promise.then(renderizarQuizzes)
     promise.catch(() => alert("Erro coleta de dados API"))
 }
+
+
