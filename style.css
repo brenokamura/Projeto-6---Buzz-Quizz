@@ -1,0 +1,107 @@
+* {
+    box-sizing: border-box;
+    font-family: "Roboto", sans-serif;
+}
+
+body{
+width: 100%;
+font-family: 'Roboto', sans-serif;
+display: flex;
+flex-direction: column;
+align-items: center;
+
+}
+
+.header{
+height: 69px;
+width: 100%;
+
+display: flex;
+align-items: center;
+justify-content: center;
+
+position: fixed;
+top: 0;
+z-index: 2;
+
+background-color: #EC362D;
+box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+
+.header h1{
+font-family: Roboto;
+font-style: normal;
+font-weight: 700;
+font-size: 37px;
+line-height: 43px;
+color: #FFFFFF;
+}
+
+
+.createQuizz {
+
+width: 1051px;
+height: 181px;
+margin-top: 146px;
+
+display: flex;
+flex-direction: column;
+align-items: center;
+text-align: center;
+justify-content: space-between;
+
+background: #FAFAFA;
+border: 1px dashed #D5D5D5;
+box-sizing: border-box;
+border-radius: 5px;   
+}
+
+.createQuizz p{
+width: 250px;
+height: 107px;
+margin-top: 10px;
+
+display: flex;
+align-items: center;
+text-align: center;
+
+color: #B9B9B9;
+font-family: Roboto;
+font-style: normal;
+font-weight: normal;
+font-size: 20px;
+line-height: 23px;
+}
+
+.createQuizz button {
+width: 136px;
+height: 40px;
+margin-bottom: 33px;
+
+background-color: #FAFAFA;
+border: 1px dashed #EC362D;
+box-sizing: border-box;
+border-radius: 50px;
+
+
+font-family: Roboto;
+font-style: normal;
+font-weight: normal;
+font-size: 21px;
+line-height: 25px;
+color: #EC362D;
+
+cursor: pointer;
+}
+
+.allQuizz h2 {
+margin-top: 35px;
+
+font-family: Roboto;
+font-style: normal;
+font-weight: bold;
+font-size: 20px;
+line-height: 23px;
+text-align: left;
+}
