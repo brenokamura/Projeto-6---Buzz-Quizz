@@ -14,10 +14,10 @@
     <link rel="stylesheet" href="reset.css">
     <link rel="stylesheet" href="style.css">
 </head>
-<body>
+<body onload="obterQuizzes()">
         
     <main class="telas">
-        <div class="tela-um">
+        <!-- <div class="tela-um">
             <header class="topo">BuzzQuizz</header>
             <div class="conteudo">
                 <div class="quizzes-do-usuario">
@@ -33,11 +33,21 @@
                         <img src="erased-thumb.jpg" class="imagem-quizz"> 
                         <div class="nome-quizz">O quanto você conhece Erased?</div>
                     </div>
-                   
-                    
                 </div>
             </div>
+        </div> -->
+        <div class="tela-tres">
+            <div class="informacoes-basicas">
+                <header class="topo">BuzzQuizz</header>
+                <p>Comece pelo começo</p>
+                <div class="caixa-infos-basicas">
+                    <div><textarea class="imput-titulo-quizz" placeholder="Título do seu quizz"></textarea></div>
+                    <div><textarea class="imput-imagem-quizz" placeholder="URL da imagem do seu quizz"></textarea></div>
+                    <div><textarea  class="imput-qtd-perguntas-quizz" placeholder="Quantidade de perguntas do quizz"></textarea></div>
+                    <div><textarea  class="imput-qtd-niveis-quizz" placeholder="Quantidade de níveis do quizz"></textarea></div>
+                </div>
 
+            </div>
         </div>
 
 
