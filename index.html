@@ -4,79 +4,53 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
-    <title>Buzz Quizz</title>
-
-    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon" />
+   
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="reset.css">
-    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+        rel="stylesheet">
+    <link href="reset.css" rel="stylesheet" />
+    <link href="style.css" rel="stylesheet" />
+    <link rel="icon" type="image/x-icon" href="imagem/favicon.ico">
+    <title>BuzzQuizz</title>
 </head>
 <body>
-    <div class="header">
-        <h1>BuzzQuizz</h1>
-    </div>
-
-    <div class="main">
-        <div class="createQuizz">
-            <p>Você não criou nenhum quizz ainda :(</p>
-            <button>Criar Quizz</button>
-        </div>
-        
-        <div class="allQuizz">
-            <h2>Todos os Quizzes</h2>
-            <div class="quizzImage">
-
+    <header class="topo">
+        <span>BuzzQuizz</span>
+    </header>
+    <main class="tela-1 display-off">
+        <section class="criar-quizz">
+            <span>Você não criou nenhum quizz ainda :)</span>
+            <button data-identifier="criar-quizz" onclick="telaCriarQuizz()">Criar Quizz</button>
+        </section>
+        <section class="todos-quizzes">
+            <h1>Todos os Quizzes</h1>
+            <div class="container_imgs" data-identifier="general-quizzes">
             </div>
-        </div>
-    </div>
-    
-    <main class="telas">
-        <div class="tela-um">
-            <header class="topo">BuzzQuizz</header>
-            <div class="conteudo">
-                <div class="quizzes-do-usuario">
-                    <p>Você não criou nenhum <br> quizz ainda :(</p>
-                    <button class="criar-quizz" onclick="criarQuizz()">Criar Quizz</button>
-                </div>
+        </section>
+    </main>
+
+    <main class="tela-2 display-off">
+        <section class="seus-quizzes">
+            <div class="container-add-quizz">
+                <h1>Seus Quizzes</h1>
+                <ion-icon class="add_quizz_icon" data-identifier="create-quizz" name="add-circle"
+                    onclick="telaCriarQuizz()"></ion-icon>
+                    <ion-icon name="add-circle-outline"></ion-icon>
             </div>
-
-            <div class="todos-quizzes">
-                <div class="titulo-todos-quizzes">Todos os Quizzes</div>
-                <div class="container-todos-quizzes">
-                    <div class="quizz"> 
-                        <img src="erased-thumb.jpg" class="imagem-quizz"> 
-                        <p class="nome-quizz">O quanto voçê conhece Erased?</p>
-                    </div>
-                    <div class="quizz"> 
-                        <img src="erased-thumb.jpg" class="imagem-quizz"> 
-                        <p class="nome-quizz"></p>
-                    </div>
-                    <div class="quizz"> 
-                        <img src="erased-thumb.jpg" class="imagem-quizz"> 
-                        <p class="nome-quizz"></p>
-                    </div>
-                    <div class="quizz"> 
-                        <img src="erased-thumb.jpg" class="imagem-quizz"> 
-                        <p class="nome-quizz"></p>
-                    </div>
-                    <div class="quizz"> 
-                        <img src="erased-thumb.jpg" class="imagem-quizz"> 
-                        <p class="nome-quizz"></p>
-                    </div>
-                    <div class="quizz"> 
-                        <img src="erased-thumb.jpg" class="imagem-quizz"> 
-                        <p class="nome-quizz"></p>
-                    </div>
-                    
-                </div>
+            <div class="container_imgs" data-identifier="user-quizzes">
             </div>
+        </section>
+        <section class="todos-quizzes">
+            <div class="container_add_img">
+                <h1>Todos os Quizzes</h1>
+            </div>
+            <div class="container_imgs" data-identifier="general-quizzes">   
+            </div>
+        </section>
+    </main>
 
-        </div>
-
-
+    <main class="tela-quizzes display-off">
     </main>
 
 
@@ -85,4 +59,5 @@
     <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
     <script src="script.js"></script>
 </body>
+
 </html>
