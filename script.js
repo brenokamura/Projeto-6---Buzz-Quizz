@@ -152,7 +152,7 @@ function destacarRespostaEscolhida(resposta) {
     let textoVerde = divRespostaEscolhida.querySelectorAll(".true");
     textoVerde[0].querySelector("p").style.color="#009C22"
 
-    // ! Scroll para a próxima pergunta
+    
 
     let nextQuestion = divRespostaEscolhida.parentNode.nextSibling;
     setTimeout(function () {
@@ -284,7 +284,6 @@ function telaCriarQuizz() {
 }
 }
 
-// !<-- Chamando Funções -->
 
 if (localStorage.length === 0) {
     document.querySelector(".tela-1").classList.remove("escondido")
