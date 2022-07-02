@@ -4,96 +4,56 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,700;1,400;1,700&display=swap"
         rel="stylesheet">
     <link href="reset.css" rel="stylesheet" />
     <link href="style.css" rel="stylesheet" />
-    <link rel="icon" type="image/x-icon" href="imagem/favicon.ico">
+    <link rel="icon" type="image/x-icon" href="imgs\favicon.ico">
+
     <title>BuzzQuizz</title>
+
 </head>
-<<<<<<< HEAD
 <body>
     <header class="topo">
-        <span>BuzzQuizz</span>
+        <h1>BuzzQuizz</h1>
     </header>
-    <main class="tela-1 display-off">
-        <section class="criar-quizz">
-            <span>Você não criou nenhum quizz ainda :)</span>
-            <button data-identifier="criar-quizz" onclick="telaCriarQuizz()">Criar Quizz</button>
-        </section>
-        <section class="todos-quizzes">
+    <main class="tela-1 escondido">
+        <div class="criar-quizz">
+            <h1>Você não criou nenhum quizz ainda 😕</h1>
+            <button  onclick="telaCriarQuizz()">Criar Quizz</button>
+        </div>
+        <div class="todos-quizzes">
             <h1>Todos os Quizzes</h1>
-            <div class="container_imgs" data-identifier="general-quizzes">
+            <div class="imagem-container" >
             </div>
-        </section>
+        </div>
     </main>
 
-    <main class="tela-2 display-off">
-        <section class="seus-quizzes">
-            <div class="container-add-quizz">
+    <main class="tela-2 escondido">
+        <div class="seus-quizzes">
+            <div class="icone-container">
                 <h1>Seus Quizzes</h1>
-                <ion-icon class="add_quizz_icon" data-identifier="create-quizz" name="add-circle"
+                <ion-icon class="add_quizz_icon"  name="add-circle"
                     onclick="telaCriarQuizz()"></ion-icon>
-                    <ion-icon name="add-circle-outline"></ion-icon>
             </div>
-            <div class="container_imgs" data-identifier="user-quizzes">
+            <div class="imagem-container">
             </div>
-        </section>
-        <section class="todos-quizzes">
+        </div>
+        <div class="todos-quizzes">
             <div class="container_add_img">
                 <h1>Todos os Quizzes</h1>
             </div>
-            <div class="container_imgs" data-identifier="general-quizzes">   
-            </div>
-        </section>
-    </main>
-
-    <main class="tela-quizzes display-off">
-=======
-<body onload="obterQuizzes()">
-        
-    <main class="telas">
-        <!-- <div class="tela-um">
-            <header class="topo">BuzzQuizz</header>
-            <div class="conteudo">
-                <div class="quizzes-do-usuario">
-                    <p>Você não criou nenhum <br> quizz ainda :(</p>
-                    <button class="criar-quizz" onclick="criarQuizz()">Criar Quizz</button>
-                </div>
-            </div>
-
-            <div class="todos-quizzes">
-                <div class="titulo-todos-quizzes">Todos os Quizzes</div>
-                <div class="container-todos-quizzes">
-                    <div class="quizz" onclick="telaDois(this)"> 
-                        <img src="erased-thumb.jpg" class="imagem-quizz"> 
-                        <div class="nome-quizz">O quanto você conhece Erased?</div>
-                    </div>
-                </div>
-            </div>
-        </div> -->
-        <div class="tela-tres">
-            <div class="informacoes-basicas">
-                <header class="topo">BuzzQuizz</header>
-                <p>Comece pelo começo</p>
-                <div class="caixa-infos-basicas">
-                    <div><textarea class="imput-titulo-quizz" placeholder="Título do seu quizz"></textarea></div>
-                    <div><textarea class="imput-imagem-quizz" placeholder="URL da imagem do seu quizz"></textarea></div>
-                    <div><textarea  class="imput-qtd-perguntas-quizz" placeholder="Quantidade de perguntas do quizz"></textarea></div>
-                    <div><textarea  class="imput-qtd-niveis-quizz" placeholder="Quantidade de níveis do quizz"></textarea></div>
-                </div>
-
+            <div class="imagem-container" >
             </div>
         </div>
-
-
->>>>>>> 86d6065b9b3efe4467bc82c23968775fd86db5b4
     </main>
 
+    <main class="tela-quizzes escondido">
+    </main>
 
+    
     <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
