@@ -276,11 +276,13 @@ function telaCriarQuizz() {
     if (localStorage.length ===0) {
     document.querySelector(".tela-1").classList.add("escondido");
     document.querySelector(".main").classList.remove("escondido");
-    document.querySelector(".tela_3-1").classList.remove("escondido");
+    //adiconar tela 3.1
+    document.querySelector("").classList.remove("escondido");
 } else if (localStorage.length !==0) {
     document.querySelector(".tela-2").classList.add("escondido");
     document.querySelector(".main").classList.remove("escondido");
-    document.querySelector(".tela_3-1").classList.remove("escondido");
+    //adicionar tela3.1
+    document.querySelector(".").classList.remove("escondido");
 }
 }
 
