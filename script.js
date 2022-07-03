@@ -60,12 +60,13 @@ function renderizarTelaTresInfosBasicas() {
 function tituloValido() {
 
     let tituloQuizz = document.querySelector(".imput-titulo-quizz").value;
-
-    if (tituloQuizz.lenght >= 20 && tituloQuizz.lenght <= 65) {
+    
+    if (tituloQuizz.length >= 20 && tituloQuizz.length <= 65) {
         return true;
     }
     else {
         return false;
+        
     }
 }
 function imagemValida(url) {
@@ -119,6 +120,24 @@ function enviarInfosBasicas() {
     }
 }
 
+
+function criarPerguntas() {
+    let quantidadePerguntas = parent(document.querySelector(".imput-qtd-perguntas-quizz").value)
+
+    const containerPerguntas = document.querySelector(".container-criar-perguntas");
+    containerPerguntas.innerHTML = `
+   
+    `
+}
+
+
+
+
+function testes() {
+    alert("teste");
+}
+
+
 function textoPerguntaValido() {
 
     let textoPergunta = document.querySelector(".imput-pergunta").value;
@@ -130,12 +149,4 @@ function textoPerguntaValido() {
         return false;
     }
 
-}
-function criarPerguntas(){
-
-}
-
-function testes()
-{
-    alert("teste");
 }

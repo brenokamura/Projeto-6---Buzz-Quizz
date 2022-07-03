@@ -5,51 +5,30 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <title>Buzz Quizz</title>
-
-    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="reset.css">
-    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+        rel="stylesheet">
+    <link href="reset.css" rel="stylesheet" />
+    <link href="style.css" rel="stylesheet" />
+    <link rel="icon" type="image/x-icon" href="imgs\favicon.ico">
+
+    <title>BuzzQuizz</title>
+
 </head>
 
-<body onload="obterQuizzes()">
-
-    <main class="telas">
-        <!-- <div class="tela-um">
-            <header class="topo">BuzzQuizz</header>
-            <div class="conteudo">
-                <div class="quizzes-do-usuario">
-                    <p>Você não criou nenhum <br> quizz ainda :(</p>
-                    <button class="criar-quizz" onclick="criarQuizz()">Criar Quizz</button>
-                </div>
-            </div>
-
-            <div class="todos-quizzes">
-                <div class="titulo-todos-quizzes">Todos os Quizzes</div>
-                <div class="container-todos-quizzes">
-                    <div class="quizz" onclick="telaDois(this)"> 
-                        <img src="erased-thumb.jpg" class="imagem-quizz"> 
-                        <div class="nome-quizz">O quanto você conhece Erased?</div>
-                    </div>
-                </div>
-            </div>
-        </div> -->
-        <!-- <div class="tela-tres-infos-basicas">
-            <div class="informacoes-basicas">
-                <header class="topo">BuzzQuizz</header>
-                <p class="titulo-tela-3">Comece pelo começo</p>
-                <div class="caixa-infos-basicas">
-                    <div><textarea class="imput-titulo-quizz" placeholder="Título do seu quizz"></textarea></div>
-                    <div><textarea class="imput-imagem-quizz" placeholder="URL da imagem do seu quizz"></textarea></div>
-                    <div><textarea  class="imput-qtd-perguntas-quizz" placeholder="Quantidade de perguntas do quizz"></textarea></div>
-                    <div><textarea  class="imput-qtd-niveis-quizz" placeholder="Quantidade de níveis do quizz"></textarea></div>
-                </div>
-                <div class="botao-criar-perguntas"><button onclick="enviarInfosBasicas()">Prosseguir pra criar perguntas</button></div>
-
+<body>
+    <header class="topo">
+        <h1>BuzzQuizz</h1>
+    </header>
+    <main class="tela-1 escondido">
+        <div class="criar-quizz">
+            <h1>Você não criou nenhum quizz ainda 😕</h1>
+            <button onclick="telaCriarQuizz()">Criar Quizz</button>
+        </div>
+        <div class="todos-quizzes">
+            <h1>Todos os Quizzes</h1>
+            <div class="imagem-container">
             </div>
         </div> -->
         <div class="tela-tres-perguntas">
@@ -89,41 +68,46 @@
                     <img src="Vector.png" class="icone-abrir-form">
                 </form>
                 <div><button onclick="" class="botao-prosseguir-niveis">Prosseguir pra criar níveis</button></div>
-               
-                
+
+
             </div>
         </div>
+    </main>
 
-        <!-- <div class="tela-tres-niveis">
-            <header class="topo">BuzzQuizz</header>
-            <div class="container-criar-niveis">
-                <p class="titulo-tela-niveis">Agora, decida os níveis</p>
-                <form class="caixa-nivel-aberta">
-                    <div class="numero-nivel">Nível 1</div>
-                    <div><textarea class="imput-título-nivel" placeholder="Título do nível"></textarea></div>
-                    <div><textarea class="imput-acerto-minimo" placeholder="% de acerto mínima"></textarea></div>
-                    <div><textarea class="imput-imagem-nivel" placeholder="URL da imagem do nível"></textarea></div>
-                    <div><textarea class="imput-descricao-nivel" placeholder="Descrição do nível"></textarea></div>
-                </form>
-                <form class="caixa-nivel-fehada">
-                    <div class="numero-nivel-fechado">Nível 2</div>
-                    <img src="Vector.png" class="icone-abrir-form-nivel">
-                </form>
-                <div><button onclick="" class="botao-finalizar-quizz">Finalizar Quizz</button></div>
+    <main class="tela-2 escondido">
+        <div class="seus-quizzes">
+            <div class="icone-container">
+                <h1>Seus Quizzes</h1>
+                <ion-icon class="add_quizz_icon" name="add-circle" onclick="telaCriarQuizz()"></ion-icon>
             </div>
-        </div> -->
-        <!-- <div class="tela-tres-quizz-pronto">
-            <header class="topo">BuzzQuizz</header>
-            <div class="container-quizz-pronto">
-                <p class="titulo-quizz-prontos">Seu quizz está pronto!</p>
-                <div class="quizz-pronto"><img src="Rectangle 34 (1).png"></div>
-                <div class="botao-acessar-quizz"><button>Acessar Quizz</button></div>
-                <p class="final-pagina">Voltar pra home</p>
+            <div class="imagem-container">
             </div>
+        </div>
+        <div class="todos-quizzes">
+            <div class="container_add_img">
+                <h1>Todos os Quizzes</h1>
+            </div>
+            <div class="imagem-container">
+            </div>
+        </div>
+    </main>
 
-        </div> -->
+    <main class="tela-quizzes escondido">
+    </main>
 
-
+    <main class="tela-3">
+        <div class="infos-basicas-quizz">
+            <p class="titulo-infos-basicas">Comece pelo começo</p>
+            <div class="caixa-infos-basicas">
+                <div><textarea class="imput-titulo-quizz" placeholder="Título do seu quizz"></textarea></div>
+                <div><textarea class="imput-imagem-quizz" placeholder="URL da imagem do seu quizz"></textarea></div>
+                <div><textarea  class="imput-qtd-perguntas-quizz" placeholder="Quantidade de perguntas do quizz"></textarea></div>
+                <div><textarea  class="imput-qtd-niveis-quizz" placeholder="Quantidade de níveis do quizz"></textarea></div>
+            </div>
+            <div class="botao-criar-perguntas"><button onclick="enviarInfosBasicas()">Prosseguir pra criar perguntas</button></div> 
+        </div>
+           
+       
     </main>
 
 
