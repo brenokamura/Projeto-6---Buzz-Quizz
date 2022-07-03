@@ -30,48 +30,8 @@
             <h1>Todos os Quizzes</h1>
             <div class="imagem-container">
             </div>
-        </div> -->
-        <div class="tela-tres-perguntas">
-            <header class="topo">BuzzQuizz</header>
-            <div class="container-criar-perguntas">
-
-                <p class="titulo-tela-3">Crie suas perguntas</p>
-                <form class="caixa-das-perguntas">
-                    <div class="pergunta">
-                        <div class="numero-pergunta">Pergunta 1</div>
-                        <div><textarea class="imput-pergunta" placeholder="Texto da pergunta"></textarea></div>
-                        <div><textarea class="imput-pergunta" placeholder="Cor de fundo da pergunta"></textarea></div>
-                    </div>
-                    <div class="respostas">
-                        <div class="titulo-resposta-correta">Resposta correta</div>
-                        <div><textarea class="imput-resposta" placeholder="Resposta correta"></textarea></div>
-                        <div><textarea class="imput-resposta" placeholder="URL da imagem"></textarea></div>
-                    </div>
-                    <div class="respostas-incorretas">
-                        <div class="titulo-resposta-incorreta">Respostas incorretas</div>
-                        <div><textarea class="imput-resposta-errada" placeholder="Resposta incorreta 1"></textarea>
-                        </div>
-                        <div><textarea class="imput-resposta-errada" placeholder="URL da imagem 1"></textarea></div>
-                        <div><textarea class="imput-resposta-errada" placeholder="Resposta incorreta 2"></textarea>
-                        </div>
-                        <div><textarea class="imput-resposta-errada" placeholder="URL da imagem 2"></textarea></div>
-                        <div><textarea class="imput-resposta-errada" placeholder="Resposta incorreta 3"></textarea>
-                        </div>
-                        <div><textarea class="imput-resposta-errada" placeholder="URL da imagem 3"></textarea></div>
-                        <div><textarea class="imput-resposta-errada" placeholder="Resposta incorreta 4"></textarea>
-                        </div>
-                        <div><textarea class="imput-resposta-errada" placeholder="URL da imagem 4"></textarea></div>
-                    </div>
-                </form>
-                <form class="caixa-das-perguntas-fehada">
-                    <div class="pergunta-fechada"> Pergunta 2</div>
-                    <img src="Vector.png" class="icone-abrir-form">
-                </form>
-                <div><button onclick="" class="botao-prosseguir-niveis">Prosseguir pra criar níveis</button></div>
-
-
-            </div>
         </div>
+
     </main>
 
     <main class="tela-2 escondido">
@@ -96,20 +56,64 @@
     </main>
 
     <main class="tela-3">
-        <div class="infos-basicas-quizz">
-            <p class="titulo-infos-basicas">Comece pelo começo</p>
-            <div class="caixa-infos-basicas">
-                <div><textarea class="imput-titulo-quizz" placeholder="Título do seu quizz"></textarea></div>
-                <div><textarea class="imput-imagem-quizz" placeholder="URL da imagem do seu quizz"></textarea></div>
-                <div><textarea  class="imput-qtd-perguntas-quizz" placeholder="Quantidade de perguntas do quizz"></textarea></div>
-                <div><textarea  class="imput-qtd-niveis-quizz" placeholder="Quantidade de níveis do quizz"></textarea></div>
+        <div class="container-3">
+            <div class="infos-basicas-quizz">
+                <p class="titulo-infos-basicas">Comece pelo começo</p>
+                <div class="caixa-infos-basicas">
+                    <div><textarea class="imput-titulo-quizz" placeholder="Título do seu quizz"></textarea></div>
+                    <div><textarea class="imput-imagem-quizz" placeholder="URL da imagem do seu quizz"></textarea></div>
+                    <div><textarea class="imput-qtd-perguntas-quizz"
+                            placeholder="Quantidade de perguntas do quizz"></textarea></div>
+                    <div><textarea class="imput-qtd-niveis-quizz"
+                            placeholder="Quantidade de níveis do quizz"></textarea></div>
+                </div>
+                <div class="botao-criar-perguntas"><button onclick="enviarInfosBasicas()">Prosseguir pra criar
+                        perguntas</button></div>
             </div>
-            <div class="botao-criar-perguntas"><button onclick="enviarInfosBasicas()">Prosseguir pra criar perguntas</button></div> 
         </div>
-           
-       
-    </main>
 
+    </main>
+    <!-- <div class="tela-tres-perguntas ">
+
+        <div class="container-criar-perguntas"> -->
+
+            <!-- <p class="titulo-tela-3">Crie suas perguntas</p> -->
+            <!-- <form class="caixa-das-perguntas">
+                <div class="pergunta">
+                    <div class="numero-pergunta">Pergunta 1</div>
+                    <div><textarea class="imput-pergunta" placeholder="Texto da pergunta"></textarea></div>
+                    <div><textarea class="imput-pergunta" placeholder="Cor de fundo da pergunta"></textarea></div>
+                </div>
+                <div class="respostas">
+                    <div class="titulo-resposta-correta">Resposta correta</div>
+                    <div><textarea class="imput-resposta" placeholder="Resposta correta"></textarea></div>
+                    <div><textarea class="imput-resposta" placeholder="URL da imagem"></textarea></div>
+                </div>
+                <div class="respostas-incorretas">
+                    <div class="titulo-resposta-incorreta">Respostas incorretas</div>
+                    <div><textarea class="imput-resposta-errada" placeholder="Resposta incorreta 1"></textarea>
+                    </div>
+                    <div><textarea class="imput-resposta-errada" placeholder="URL da imagem 1"></textarea></div>
+                    <div><textarea class="imput-resposta-errada" placeholder="Resposta incorreta 2"></textarea>
+                    </div>
+                    <div><textarea class="imput-resposta-errada" placeholder="URL da imagem 2"></textarea></div>
+                    <div><textarea class="imput-resposta-errada" placeholder="Resposta incorreta 3"></textarea>
+                    </div>
+                    <div><textarea class="imput-resposta-errada" placeholder="URL da imagem 3"></textarea></div>
+                    <div><textarea class="imput-resposta-errada" placeholder="Resposta incorreta 4"></textarea>
+                    </div>
+                    <div><textarea class="imput-resposta-errada" placeholder="URL da imagem 4"></textarea></div>
+                </div>
+            </form> -->
+            <!-- <form class="caixa-das-perguntas-fehada">
+                <div class="pergunta-fechada"> Pergunta 2</div>
+                <img src="Vector.png" class="icone-abrir-form">
+            </form>
+            <div><button onclick="" class="botao-prosseguir-niveis">Prosseguir pra criar níveis</button></div>
+
+
+        </div>
+    </div> -->
 
     <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
