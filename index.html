@@ -1,10 +1,11 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
+
     <title>Buzz Quizz</title>
 
     <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon" />
@@ -14,8 +15,9 @@
     <link rel="stylesheet" href="reset.css">
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body onload="obterQuizzes()">
-        
+
     <main class="telas">
         <!-- <div class="tela-um">
             <header class="topo">BuzzQuizz</header>
@@ -36,19 +38,90 @@
                 </div>
             </div>
         </div> -->
-        <div class="tela-tres">
+        <!-- <div class="tela-tres-infos-basicas">
             <div class="informacoes-basicas">
                 <header class="topo">BuzzQuizz</header>
-                <p>Comece pelo começo</p>
+                <p class="titulo-tela-3">Comece pelo começo</p>
                 <div class="caixa-infos-basicas">
                     <div><textarea class="imput-titulo-quizz" placeholder="Título do seu quizz"></textarea></div>
                     <div><textarea class="imput-imagem-quizz" placeholder="URL da imagem do seu quizz"></textarea></div>
                     <div><textarea  class="imput-qtd-perguntas-quizz" placeholder="Quantidade de perguntas do quizz"></textarea></div>
                     <div><textarea  class="imput-qtd-niveis-quizz" placeholder="Quantidade de níveis do quizz"></textarea></div>
                 </div>
+                <div class="botao-criar-perguntas"><button onclick="enviarInfosBasicas()">Prosseguir pra criar perguntas</button></div>
 
             </div>
+        </div> -->
+        <div class="tela-tres-perguntas">
+            <header class="topo">BuzzQuizz</header>
+            <div class="container-criar-perguntas">
+
+                <p class="titulo-tela-3">Crie suas perguntas</p>
+                <form class="caixa-das-perguntas">
+                    <div class="pergunta">
+                        <div class="numero-pergunta">Pergunta 1</div>
+                        <div><textarea class="imput-pergunta" placeholder="Texto da pergunta"></textarea></div>
+                        <div><textarea class="imput-pergunta" placeholder="Cor de fundo da pergunta"></textarea></div>
+                    </div>
+                    <div class="respostas">
+                        <div class="titulo-resposta-correta">Resposta correta</div>
+                        <div><textarea class="imput-resposta" placeholder="Resposta correta"></textarea></div>
+                        <div><textarea class="imput-resposta" placeholder="URL da imagem"></textarea></div>
+                    </div>
+                    <div class="respostas-incorretas">
+                        <div class="titulo-resposta-incorreta">Respostas incorretas</div>
+                        <div><textarea class="imput-resposta-errada" placeholder="Resposta incorreta 1"></textarea>
+                        </div>
+                        <div><textarea class="imput-resposta-errada" placeholder="URL da imagem 1"></textarea></div>
+                        <div><textarea class="imput-resposta-errada" placeholder="Resposta incorreta 2"></textarea>
+                        </div>
+                        <div><textarea class="imput-resposta-errada" placeholder="URL da imagem 2"></textarea></div>
+                        <div><textarea class="imput-resposta-errada" placeholder="Resposta incorreta 3"></textarea>
+                        </div>
+                        <div><textarea class="imput-resposta-errada" placeholder="URL da imagem 3"></textarea></div>
+                        <div><textarea class="imput-resposta-errada" placeholder="Resposta incorreta 4"></textarea>
+                        </div>
+                        <div><textarea class="imput-resposta-errada" placeholder="URL da imagem 4"></textarea></div>
+                    </div>
+                </form>
+                <form class="caixa-das-perguntas-fehada">
+                    <div class="pergunta-fechada"> Pergunta 2</div>
+                    <img src="Vector.png" class="icone-abrir-form">
+                </form>
+                <div><button onclick="" class="botao-prosseguir-niveis">Prosseguir pra criar níveis</button></div>
+               
+                
+            </div>
         </div>
+
+        <!-- <div class="tela-tres-niveis">
+            <header class="topo">BuzzQuizz</header>
+            <div class="container-criar-niveis">
+                <p class="titulo-tela-niveis">Agora, decida os níveis</p>
+                <form class="caixa-nivel-aberta">
+                    <div class="numero-nivel">Nível 1</div>
+                    <div><textarea class="imput-título-nivel" placeholder="Título do nível"></textarea></div>
+                    <div><textarea class="imput-acerto-minimo" placeholder="% de acerto mínima"></textarea></div>
+                    <div><textarea class="imput-imagem-nivel" placeholder="URL da imagem do nível"></textarea></div>
+                    <div><textarea class="imput-descricao-nivel" placeholder="Descrição do nível"></textarea></div>
+                </form>
+                <form class="caixa-nivel-fehada">
+                    <div class="numero-nivel-fechado">Nível 2</div>
+                    <img src="Vector.png" class="icone-abrir-form-nivel">
+                </form>
+                <div><button onclick="" class="botao-finalizar-quizz">Finalizar Quizz</button></div>
+            </div>
+        </div> -->
+        <!-- <div class="tela-tres-quizz-pronto">
+            <header class="topo">BuzzQuizz</header>
+            <div class="container-quizz-pronto">
+                <p class="titulo-quizz-prontos">Seu quizz está pronto!</p>
+                <div class="quizz-pronto"><img src="Rectangle 34 (1).png"></div>
+                <div class="botao-acessar-quizz"><button>Acessar Quizz</button></div>
+                <p class="final-pagina">Voltar pra home</p>
+            </div>
+
+        </div> -->
 
 
     </main>
@@ -59,4 +132,5 @@
     <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
     <script src="script.js"></script>
 </body>
+
 </html>
