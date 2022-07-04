@@ -21,7 +21,7 @@
     <header class="topo">
         <h1>BuzzQuizz</h1>
     </header>
-    <main class="tela-1 escondido">
+    <main class="tela-1 ">
         <div class="criar-quizz">
             <h1>Você não criou nenhum quizz ainda 😕</h1>
             <button onclick="telaCriarQuizz()">Criar Quizz</button>
@@ -57,63 +57,39 @@
 
     <main class="tela-3">
         <div class="container-3">
-            <div class="infos-basicas-quizz">
+            <div class="infos-basicas-quizz escondido">
                 <p class="titulo-infos-basicas">Comece pelo começo</p>
                 <div class="caixa-infos-basicas">
-                    <div><textarea class="imput-titulo-quizz" placeholder="Título do seu quizz"></textarea></div>
-                    <div><textarea class="imput-imagem-quizz" placeholder="URL da imagem do seu quizz"></textarea></div>
-                    <div><textarea class="imput-qtd-perguntas-quizz"
-                            placeholder="Quantidade de perguntas do quizz"></textarea></div>
-                    <div><textarea class="imput-qtd-niveis-quizz"
-                            placeholder="Quantidade de níveis do quizz"></textarea></div>
+                    <div><input type="text" class="input-titulo-quizz" placeholder="Título do seu quizz"></input></div>
+                    <div><input type="text" class="input-imagem-quizz" placeholder="URL da imagem do seu quizz"></input>
+                    </div>
+                    <div><input type="text" class="input-qtd-perguntas-quizz"
+                            placeholder="Quantidade de perguntas do quizz"></input></div>
+                    <div><input type="text" class="input-qtd-niveis-quizz"
+                            placeholder="Quantidade de níveis do quizz"></input></div>
                 </div>
                 <div class="botao-criar-perguntas"><button onclick="enviarInfosBasicas()">Prosseguir pra criar
                         perguntas</button></div>
             </div>
         </div>
-
     </main>
-    <!-- <div class="tela-tres-perguntas ">
-
-        <div class="container-criar-perguntas"> -->
-
-            <!-- <p class="titulo-tela-3">Crie suas perguntas</p> -->
-            <!-- <form class="caixa-das-perguntas">
-                <div class="pergunta">
-                    <div class="numero-pergunta">Pergunta 1</div>
-                    <div><textarea class="imput-pergunta" placeholder="Texto da pergunta"></textarea></div>
-                    <div><textarea class="imput-pergunta" placeholder="Cor de fundo da pergunta"></textarea></div>
-                </div>
-                <div class="respostas">
-                    <div class="titulo-resposta-correta">Resposta correta</div>
-                    <div><textarea class="imput-resposta" placeholder="Resposta correta"></textarea></div>
-                    <div><textarea class="imput-resposta" placeholder="URL da imagem"></textarea></div>
-                </div>
-                <div class="respostas-incorretas">
-                    <div class="titulo-resposta-incorreta">Respostas incorretas</div>
-                    <div><textarea class="imput-resposta-errada" placeholder="Resposta incorreta 1"></textarea>
-                    </div>
-                    <div><textarea class="imput-resposta-errada" placeholder="URL da imagem 1"></textarea></div>
-                    <div><textarea class="imput-resposta-errada" placeholder="Resposta incorreta 2"></textarea>
-                    </div>
-                    <div><textarea class="imput-resposta-errada" placeholder="URL da imagem 2"></textarea></div>
-                    <div><textarea class="imput-resposta-errada" placeholder="Resposta incorreta 3"></textarea>
-                    </div>
-                    <div><textarea class="imput-resposta-errada" placeholder="URL da imagem 3"></textarea></div>
-                    <div><textarea class="imput-resposta-errada" placeholder="Resposta incorreta 4"></textarea>
-                    </div>
-                    <div><textarea class="imput-resposta-errada" placeholder="URL da imagem 4"></textarea></div>
-                </div>
-            </form> -->
-            <!-- <form class="caixa-das-perguntas-fehada">
-                <div class="pergunta-fechada"> Pergunta 2</div>
-                <img src="Vector.png" class="icone-abrir-form">
-            </form>
-            <div><button onclick="" class="botao-prosseguir-niveis">Prosseguir pra criar níveis</button></div>
-
+    <main class="tela-3-niveis escondido">
+        <div class="container-3">
+            <p class="titulo-tela-niveis">Agora, decida os níveis</p>
 
         </div>
-    </div> -->
+    </main>
+    <main>
+        <div class="tela-3-quizz-pronto escondido">
+            <div class="container-3">
+                <p class="titulo-quizz-prontos">Seu quizz está pronto!</p>
+           
+            </div>
+
+        </div>
+    </main>
+
+
 
     <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
